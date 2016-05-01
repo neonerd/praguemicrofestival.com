@@ -1,0 +1,350 @@
+/*
+  Prague Microfestival 2016 website
+*/
+@font-face {
+  font-family: 'ostrich_sansblack';
+  src: url('/fonts/ostrichsans-black-webfont.eot');
+  src: url('/fonts/ostrichsans-black-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/ostrichsans-black-webfont.woff2') format('woff2'), url('/fonts/ostrichsans-black-webfont.woff') format('woff'), url('/fonts/ostrichsans-black-webfont.ttf') format('truetype'), url('/fonts/ostrichsans-black-webfont.svg#ostrich_sansblack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ostrich_sansheavy';
+  src: url('/fonts/ostrichsans-heavy-webfont.eot');
+  src: url('/fonts/ostrichsans-heavy-webfont.eot?#iefix') format('embedded-opentype'), url('/fonts/ostrichsans-heavy-webfont.woff2') format('woff2'), url('/fonts/ostrichsans-heavy-webfont.woff') format('woff'), url('/fonts/ostrichsans-heavy-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-size: 16px;
+}
+.container {
+  width: 1200px;
+  padding: 0;
+}
+a {
+  color: #e52420;
+}
+.mainMenu {
+  z-index: 20;
+  width: 100%;
+  display: block;
+  position: fixed;
+}
+.mainMenu menu {
+  list-style-type: none;
+  text-align: right;
+  margin: 0;
+}
+.mainMenu li {
+  display: inline-block;
+  margin-left: 40px;
+  line-height: 88px;
+}
+.mainMenu a {
+  font-family: 'ostrich_sansblack';
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #e52420;
+}
+.mainHeading {
+  display: block;
+  opacity: 0;
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  height: 88px;
+  background-image: url('/img/header_noise.png');
+  background-repeat: repeat-x;
+}
+.mainHeading h2 {
+  font-family: "Dosis";
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 64px;
+  margin-top: 0;
+  line-height: 88px;
+}
+.parallaxContainer {
+  position: relative;
+  display: block;
+  z-index: 0;
+  width: 1200px;
+  margin: 0 auto;
+}
+.parallaxContainer .pEl {
+  display: block;
+  position: absolute;
+}
+.parallaxContainer .hdr1 {
+  top: 133px;
+}
+.parallaxContainer .hdr2 {
+  top: 400px;
+  left: 0px;
+}
+.parallaxContainer .hdr3 {
+  top: 600px;
+  left: 0px;
+}
+.parallaxContainer .hdr4 {
+  top: 700px;
+  left: 0px;
+}
+.parallaxContainer .date1 {
+  top: 180px;
+  right: 100px;
+}
+.parallaxContainer .date2 {
+  top: 270px;
+  right: 0px;
+  transform: scale(1);
+  animation-duration: 1s;
+  animation-name: deenlarge;
+}
+.parallaxContainer .date2:hover {
+  animation-name: enlarge;
+  animation-duration: 1s;
+  transform: scale(1.1);
+}
+@keyframes organic_animation {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.05) rotate(-7deg);
+  }
+  75% {
+    transform: rotate(-4deg);
+  }
+  to {
+    transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes deenlarge {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.parallaxContainer .organic {
+  z-index: -1;
+  top: 0px;
+  left: 260px;
+  animation-name: organic_animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.parallaxContainer .aboutClaim {
+  position: absolute;
+  display: block;
+  top: 1210px;
+  left: 750px;
+}
+.parallaxContainer .aboutClaim h3,
+.parallaxContainer .aboutClaim h4 {
+  font-family: 'ostrich_sansheavy';
+  color: #e52420;
+}
+.parallaxContainer .aboutClaim h3 {
+  font-size: 56px;
+  letter-spacing: 4px;
+}
+.parallaxContainer .aboutClaim h4 {
+  font-size: 42px;
+}
+.parallaxContainer .about {
+  position: absolute;
+  display: block;
+  top: 1150px;
+}
+.parallaxContainer .about h2 {
+  font-family: 'Dosis';
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.parallaxContainer .about p {
+  font-family: 'Dosis';
+  font-weight: 500;
+  margin-top: 30px;
+  max-width: 660px;
+  font-size: 20px;
+}
+.parallaxContainer .programDate1 {
+  top: 2700px;
+}
+.parallaxContainer .programDate2 {
+  top: 3170px;
+  left: 350px;
+}
+.parallaxContainer .program-texture9 {
+  top: 3200px;
+  left: 370px;
+  z-index: -1;
+}
+.parallaxContainer .programDate3 {
+  top: 2900px;
+  right: 200px;
+}
+.parallaxContainer .program-textures11 {
+  z-index: 2;
+  top: 3000px;
+}
+.parallaxContainer .program-textures31 {
+  top: 2950px;
+  left: 60px;
+}
+.parallaxContainer .program-textures67 {
+  top: 3380px;
+  left: 80px;
+}
+.parallaxContainer .program-logo1 {
+  top: 3150px;
+  left: 200px;
+}
+.parallaxContainer .program-textures3 {
+  top: 2700px;
+  left: 470px;
+}
+.parallaxContainer .program-textures111 {
+  top: 3170px;
+  left: 790px;
+}
+.parallaxContainer .program-textures8 {
+  top: 3190px;
+  left: 820px;
+  z-index: -1;
+}
+.parallaxContainer .program-textures68 {
+  top: 2630px;
+  left: 800px;
+}
+.parallaxContainer .program-logo2 {
+  top: 2640px;
+  left: 1050px;
+}
+.parallaxContainer .program-textures4 {
+  top: 3060px;
+  left: 1100px;
+}
+.parallaxContainer .program-textures69 {
+  top: 3080px;
+  left: 1220px;
+  z-index: -1;
+}
+.parallaxContainer .program {
+  display: block;
+  position: absolute;
+  top: 2630px;
+  z-index: 5;
+}
+.parallaxContainer .program .day {
+  display: none;
+  min-height: 800px;
+  padding: 75px;
+  position: relative;
+}
+.parallaxContainer .program .day .close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  background-image: url('/img/program/close.png');
+  z-index: 10;
+  opacity: 1;
+}
+.parallaxContainer .program .day h4 {
+  font-family: 'ostrich_sansblack';
+  color: #e52420;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.parallaxContainer .program .day h5 {
+  color: #fff;
+  font-family: "Dosis";
+  font-weight: 700;
+  font-size: 22px;
+  margin: 40px 0px;
+}
+.parallaxContainer .program .day p {
+  color: #505456;
+  font-family: 'Dosis';
+  font-weight: 500;
+  width: 620px;
+  font-size: 18px;
+}
+.parallaxContainer .program .day ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.parallaxContainer .program .day li {
+  color: #505456;
+  font-family: "Dosis";
+  font-size: 20px;
+  font-weight: 500;
+}
+.parallaxContainer .program .day li a {
+  color: #505456;
+}
+.parallaxContainer .program .day li a:hover {
+  color: #e52420;
+  text-decoration: none;
+}
+.parallaxContainer .program .day .right {
+  float: right;
+  font-family: 'ostrich_sansheavy';
+}
+.parallaxContainer .program .day .right h2 {
+  color: #505456;
+  font-size: 44px;
+  font-family: 'ostrich_sansblack';
+  letter-spacing: 4px;
+}
+.parallaxContainer .program .day .right h3 {
+  color: #e52420;
+  font-size: 32px;
+}
+.parallaxContainer .program .day .mainProgram {
+  display: block;
+}
+.parallaxContainer .program .day .author {
+  display: none;
+}
+.parallaxContainer .program .day1 {
+  background-image: url('/img/program/bg_2.jpg');
+  background-repeat: no-repeat;
+}
+.parallaxContainer .program .day2 {
+  background-image: url('/img/program/bg_1.png');
+  background-repeat: repeat;
+}
+.parallaxContainer .program .day3 {
+  background-image: url('/img/program/bg_3.jpg');
+  background-repeat: no-repeat;
+}
+.parallaxContainer .partners {
+  display: block;
+  position: absolute;
+  top: 3700px;
+  text-align: center;
+  line-height: 200px;
+  padding-bottom: 50px;
+}
+.parallaxContainer .partners img {
+  margin: 0px 20px;
+}
