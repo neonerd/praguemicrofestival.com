@@ -56,4 +56,10 @@ $(document).ready(function(){
     $(this).parent().hide()
   })
 
+  $('.author a').each(function(){
+    if(!$(this).hasClass('backToMain')) {
+      $(this).attr('target', '_blank')
+    }
+  })
+
 })
