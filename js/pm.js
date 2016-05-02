@@ -23,11 +23,11 @@ $(document).ready(function(){
       $('.mainHeading h2').html('About')
     }
 
-    if(currentScrollTop >= 2100 && currentScrollTop < 3200) {
+    if(currentScrollTop >= 2350 && currentScrollTop < 3300) {
       $('.mainHeading h2').html('Program')
     }
 
-    if(currentScrollTop >= 3200) {
+    if(currentScrollTop >= 3300) {
       $('.mainHeading h2').html('Partners')
     }
 

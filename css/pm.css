@@ -183,71 +183,71 @@ a {
   font-size: 20px;
 }
 .parallaxContainer .programDate1 {
-  top: 2700px;
+  top: 2850px;
 }
 .parallaxContainer .programDate2 {
-  top: 3170px;
+  top: 3320px;
   left: 350px;
 }
 .parallaxContainer .program-texture9 {
-  top: 3200px;
+  top: 3350px;
   left: 370px;
   z-index: -1;
 }
 .parallaxContainer .programDate3 {
-  top: 2900px;
+  top: 3050px;
   right: 200px;
 }
 .parallaxContainer .program-textures11 {
   z-index: 2;
-  top: 3000px;
+  top: 3150px;
 }
 .parallaxContainer .program-textures31 {
-  top: 2950px;
+  top: 3100px;
   left: 60px;
 }
 .parallaxContainer .program-textures67 {
-  top: 3380px;
+  top: 3530px;
   left: 80px;
 }
 .parallaxContainer .program-logo1 {
-  top: 3150px;
+  top: 3300px;
   left: 200px;
 }
 .parallaxContainer .program-textures3 {
-  top: 2700px;
+  top: 2850px;
   left: 470px;
 }
 .parallaxContainer .program-textures111 {
-  top: 3170px;
+  top: 3320px;
   left: 790px;
 }
 .parallaxContainer .program-textures8 {
-  top: 3190px;
+  top: 3340px;
   left: 820px;
   z-index: -1;
 }
 .parallaxContainer .program-textures68 {
-  top: 2630px;
+  top: 2780px;
   left: 800px;
 }
 .parallaxContainer .program-logo2 {
-  top: 2640px;
+  top: 2790px;
   left: 1050px;
 }
 .parallaxContainer .program-textures4 {
-  top: 3060px;
+  top: 3210px;
   left: 1100px;
 }
 .parallaxContainer .program-textures69 {
-  top: 3080px;
+  top: 3230px;
   left: 1220px;
   z-index: -1;
 }
 .parallaxContainer .program {
   display: block;
   position: absolute;
-  top: 2630px;
+  top: 2780px;
   z-index: 5;
 }
 .parallaxContainer .program .day {
@@ -340,7 +340,7 @@ a {
 .parallaxContainer .partners {
   display: block;
   position: absolute;
-  top: 3700px;
+  top: 3800px;
   text-align: center;
   line-height: 200px;
   padding-bottom: 50px;
