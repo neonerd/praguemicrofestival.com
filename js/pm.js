@@ -2,6 +2,13 @@ var titles = {
 
 }
 
+var moveToPoint = function(point) {
+  $('html, body').animate({
+    scrollTop: point
+ }, 1000);
+}
+window.moveToPoint = moveToPoint
+
 $(document).ready(function(){
 
   $(window).scroll(function(){
